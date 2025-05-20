@@ -1,0 +1,293 @@
+/* ========== FONT ========== */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  color: #111;
+  background-color: #fafddb;
+  line-height: 1.6;
+}
+
+
+/* ========== HERO FULL SCREEN ========== */
+.hero {
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+}
+
+.hero-content {
+  height: 100%;
+  width: 100%;
+}
+
+.hero-background-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+/* ========== HEADER ========== */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 24px 5%;
+  
+}
+
+header .logo img {
+  height: 70px;
+}
+
+header nav ul {
+  display: flex;
+  gap: 32px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+header nav a {
+  text-decoration: none;
+  color: #111;
+  font-weight: 500;
+}
+
+
+/* ========== CTA BUTTON ========== */
+.cta-button {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 12px 24px;
+  background-color: #111;
+  color: #fafddb;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: 500;
+  transition: background 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #333;
+}
+
+
+/* ========== SEZIONE SOSTENIBILE ========== */
+.sostenibile {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 80px 5% 50px;
+}
+
+.sostenibile-content {
+  max-width: 600px;
+}
+
+.sostenibile h1 {
+  font-size: 40px;
+  font-weight: 700;
+  margin-bottom: 6px;
+}
+
+.sostenibile p {
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.sostenibile-image img {
+  width: 100%;
+  margin-top: 40px;
+  border-radius: 12px;
+  object-fit: cover;
+}
+
+
+/* ========== SEZIONE VALORI ========== */
+.valori {
+  padding: 50px 5%;
+}
+
+.valori h2 {
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 40px;
+}
+
+.valori-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+
+.valore {
+  flex: 1 1 calc(33.333% - 16px);
+  min-width: 300px;
+  transition: transform 0.3s ease;
+}
+
+.valore:hover {
+  transform: translateY(-4px);
+}
+
+.valore-image img {
+  width: 100%;
+  border-radius: 12px;
+  object-fit: cover;
+}
+
+.valore h3 {
+  margin-top: 12px;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.valore p {
+  font-size: 16px;
+  color: #444;
+}
+
+
+/* ========== SEZIONE VISION E MISSION ========== */
+.vision-mission {
+  padding: 60px 5%;
+}
+
+.vision-mission h2 {
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.vision-mission-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  align-items: center;
+}
+
+.vision-mission-content {
+  flex: 1 1 50%;
+  min-width: 300px;
+}
+
+.vision, .mission {
+  margin-bottom: 0px;
+}
+
+.vision::after {
+  content: "";
+  display: block;
+  height: 1px;
+  background: #ddd;
+  margin: 24px 0;
+}
+
+.vision h3, .mission h3 {
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 0px;
+}
+
+.vision p, .mission p {
+  font-size: 20px;
+  color: #444;
+}
+
+.vision-mission-image {
+  flex: 1 1 40%;
+  min-width: 280px;
+}
+
+.vision-mission-image img {
+  width: 100%;
+  border-radius: 12px;
+  object-fit: cover;
+}
+
+
+/* ========== FOOTER ========== */
+footer {
+  padding: 40px 5%;
+  text-align: center;
+  border-top: 1px solid #eee;
+  margin-top: 80px;
+}
+
+footer nav ul {
+  display: flex;
+  justify-content: center;
+  gap: 32px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+footer nav a {
+  text-decoration: none;
+  color: #555;
+  font-weight: 500;
+}
+
+footer p {
+  font-size: 14px;
+  color: #888;
+  max-width: 600px;
+  margin: 32px auto 0;
+  line-height: 1.5;
+}
+
+.social {
+  margin-top: 24px;
+}
+
+.social a {
+  color: #555;
+  font-size: 28px;
+  margin: 0 12px;
+  transition: color 0.3s ease;
+}
+
+.social a:hover {
+  color: #111;
+}
+
+
+
+
+
+/* ========== RESPONSIVE DESIGN ========== */
+@media (max-width: 768px) {
+  .valori-container,
+  .vision-mission-container {
+    flex-direction: column;
+  }
+
+  .sostenibile {
+    padding: 60px 5% 30px;
+  }
+
+  .sostenibile h1 {
+    font-size: 32px;
+  }
+
+  .sostenibile p {
+    font-size: 16px;
+  }
+
+  .vision-mission h2 {
+    font-size: 24px;
+  }
+
+  header nav ul {
+    gap: 16px;
+  }
+
+  .hero-logo {
+    max-width: 140px;
+  }
+}

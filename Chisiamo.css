@@ -1,0 +1,178 @@
+/* ========== FONT & BASE STYLES ========== */
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  color: #111;
+  background-color: #fafddb;
+  line-height: 1.6;
+}
+
+
+/* ========== HEADER ========== */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 24px 5%;
+  border-bottom: 1px solid #eee;
+}
+
+header .logo img {
+  height: 70px;
+}
+
+header nav ul {
+  display: flex;
+  gap: 32px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+header nav a {
+  text-decoration: none;
+  color: #111;
+  font-weight: 500;
+}
+
+
+/* ========== SEZIONE CHI SIAMO ========== */
+.chi-siamo {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px 5% 0px;
+}
+
+.chi-siamo-content {
+  max-width: 600px;
+}
+
+.chi-siamo h1 {
+  font-size: 40px;
+  font-weight: 700;
+  margin-bottom: 6px;
+}
+
+.chi-siamo p {
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.chi-siamo-image img {
+  width: 100%;
+  margin-top: 40px;
+  border-radius: 12px;
+  object-fit: cover;
+  margin-bottom: 0px;
+}
+
+
+/* ========== SEZIONE TESTI E IMMAGINI ========== */
+.testi1 {
+  padding: 50px 5%;
+}
+
+.testi1 p {
+  font-size: 19px;
+  color: #444;
+  margin-bottom: 40px;
+  text-align: center;
+  max-width: 950px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0;
+}
+
+.testi1-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+
+.testo1 {
+  flex: 1 1 calc(50% - 16px);
+  min-width: 300px;
+}
+
+.testo1-image img {
+  width: 100%;
+  border-radius: 12px;
+  object-fit: cover;
+}
+
+.testo1 p {
+  font-size: 16px;
+  color: #444;
+}
+
+
+/* ========== FOOTER ========== */
+footer {
+  padding: 40px 5%;
+  text-align: center;
+  border-top: 1px solid #eee;
+  margin-top: 80px;
+}
+
+footer nav ul {
+  display: flex;
+  justify-content: center;
+  gap: 32px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+footer nav a {
+  text-decoration: none;
+  color: #555;
+  font-weight: 500;
+}
+
+footer p {
+  font-size: 14px;
+  color: #888;
+  max-width: 600px;
+  margin: 32px auto 0;
+  line-height: 1.5;
+}
+
+.social {
+  margin-top: 24px;
+}
+
+.social a {
+  color: #555;
+  font-size: 28px;
+  margin: 0 12px;
+  transition: color 0.3s ease;
+}
+
+.social a:hover {
+  color: #111;
+}
+
+
+/* ========== RESPONSIVE DESIGN ========== */
+@media (max-width: 768px) {
+  .testi1-container {
+    flex-direction: column;
+  }
+
+  .chi-siamo {
+    padding: 60px 5% 30px;
+  }
+
+  .chi-siamo h1 {
+    font-size: 32px;
+  }
+
+  .chi-siamo p {
+    font-size: 16px;
+  }
+
+  header nav ul {
+    gap: 16px;
+  }
+}
